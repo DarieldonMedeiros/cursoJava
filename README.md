@@ -9,3 +9,4 @@ Este repositório contém as resoluções dos exercícios, aulas e projetos em j
 5. `Outros Tópicos Básicos Sobre Java`
 6. `Introdução à Programação Orientada a Objetos`
 7. `Construtores, Palavra this, Sobrecarga, Encapsulamento`
+8. `Comportamento de Memória, Arrays e Listas`
