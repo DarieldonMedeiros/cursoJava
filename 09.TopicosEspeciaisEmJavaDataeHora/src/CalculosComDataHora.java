@@ -38,7 +38,7 @@ public class CalculosComDataHora {
         System.out.println("t1 dias: " + t1.toDays());
         System.out.println("t2 dias: " + t2.toDays());
         System.out.println("t3 dias: " + t3.toDays());
-        System.out.println("t4 dias: " + t4.toDays()); // Fica negativo pois o primeiro argumento foi a data mais recente
+        System.out.println("t4 dias: " + t4.toDays()); // Fica negativo, pois o primeiro argumento foi a data mais recente
 
     }
 }
