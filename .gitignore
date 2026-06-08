@@ -1,2 +1,6 @@
 # IntelliJ IDEA - pasta de saída/compilação
 /out/
+
+# Configurações locais de IDE (qualquer pasta/subpasta)
+.idea/
+.vscode/
