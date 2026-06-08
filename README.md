@@ -1,4 +1,4 @@
-## Curso Java
+# Curso Java
 
 Este repositório contém as resoluções dos exercícios, aulas e projetos em java do [Curso Java COMPLETO Programação Orientada a Objetos + Projetos](https://www.udemy.com/course/java-curso-completo/) ministrado pelo Professor Nélio Alves, dos seguintes tópicos:
 
@@ -10,3 +10,4 @@ Este repositório contém as resoluções dos exercícios, aulas e projetos em j
 6. `Introdução à Programação Orientada a Objetos`
 7. `Construtores, Palavra this, Sobrecarga, Encapsulamento`
 8. `Comportamento de Memória, Arrays e Listas`
+9. `Tópicos Especiais em Java: Data e Hora`
