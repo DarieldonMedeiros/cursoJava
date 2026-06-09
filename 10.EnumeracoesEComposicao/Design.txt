@@ -1,0 +1,22 @@
+Design
+
+* Em um sistema orientado a objetos, de modo geral "tudo" é objeto!
+* Por questões de design tais como organização, flexibilidade, reuso, delegação, etc., há várias categorias de classes:
+    - Views (Telas do sistema)
+    - Controllers (Controlador = faz o meio de campo entre a tela e o sistema)
+    - Entities (Entidades = entidades de negócio [Produto, cliente, pedido, ...])
+    - Services (Serviços = encapsula a lógica de negócios da aplicação)
+    - Repositories (Repositório = objetos responsáveis por acessar os dados de um banco de dados)
+
+Composição:
+
+* É um tipo de associação que permite que um objeto contenha outro
+* Relação "tem-um" ou "tem-vários" (depende do caso)
+* Vantagens:
+    - Organização: divisão de responsabilidades (cada classe vai ter sua responsabilidade)
+    - Coesão: (cada objeto vai ser responsável por uma única coisa)
+    - Flexibilidade: (Trabalhar com algo dividido em várias partes é mais flexível)
+    - Reuso: (O mesmo objeto pode ser reaproveitado em mais de um lugar)
+* Nota: embora o símbolo UML para composição (todo-parte) seja o diamante preto, neste contexto estamos chamando de composição qualquer associação tipo "tem-um" e "tem-vários"
+
+* Obs.: A composição de objetos pode acontecer tanto com entidades (Entity) quanto com serviços (Services)
