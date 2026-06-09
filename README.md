@@ -15,3 +15,7 @@ Este repositório contém as resoluções dos exercícios, aulas e projetos em j
 | 09 | `Tópicos Especiais em Java: Data e Hora`                 |
 | 10 | `Enumerações, Composição`                                |
 | 11 | `Enumerações, Composição - Spring Boot`                  |
+
+## Observações
+
+A pasta 11. EnumeraçõesEComposicaoSpring foi utilizado o Java 25, enquanto as outras foi utilizado o Java 17
