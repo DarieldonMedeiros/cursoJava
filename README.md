@@ -15,6 +15,7 @@ Este repositório contém as resoluções dos exercícios, aulas e projetos em j
 | 09 | `Tópicos Especiais em Java: Data e Hora`                 |
 | 10 | `Enumerações, Composição`                                |
 | 11 | `Enumerações, Composição - Spring Boot`                  |
+| 12 | `Herança e Polimorfismo`                                 |
 
 ## Observações
 
