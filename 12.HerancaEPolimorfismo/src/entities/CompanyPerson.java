@@ -24,7 +24,6 @@ public class CompanyPerson extends Person {
 
     @Override
     public Double tax() {
-        double taxRate = numberOfEmployees > 10 ? 0.14 : 0.16;
-        return taxRate * getAnnualIncome();
+        return (numberOfEmployees > 10 ? 0.14 : 0.16) * getAnnualIncome();
     }
 }

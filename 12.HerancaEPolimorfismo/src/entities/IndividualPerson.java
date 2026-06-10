@@ -24,7 +24,6 @@ public class IndividualPerson extends Person {
 
     @Override
     public Double tax() {
-        double healthExpendituresCheck = healthExpenditures > 0.0 ? healthExpenditures/2.0 : 0.0;
-        return (getAnnualIncome() < 20000.00 ? 0.15*getAnnualIncome() : 0.25* getAnnualIncome()) - healthExpendituresCheck;
+        return (getAnnualIncome() < 20000.00 ? 0.15*getAnnualIncome() : 0.25* getAnnualIncome()) - healthExpenditures/2.0;
     }
 }
