@@ -1,0 +1,29 @@
+Upcasting e Downcasting
+
+Checklist
+
+* Upcasting
+    - Casting da subclasse para superclasse
+    - Uso comum: polimorfismo
+
+* Downcasting
+    - Casting da superclasse para subclasse
+    - Palavra instanceof
+    - Uso comum: métodos que recebem parâmetros genéricos (Ex.: Equals)
+
+Exemplo:
+
+Account
+    - Integer number
+    - String holder
+    - Double balance
+    + void withdraw(Double amount)
+    + void deposit(Double amount)
+
+BusinessAccount extends Account
+    - Double loanLimit
+    + void loan(double amount)
+
+SavingsAccount extends Account
+    - Double interestRate (taxa de juros)
+    + void updateBalance()
