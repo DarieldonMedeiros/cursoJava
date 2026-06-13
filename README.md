@@ -16,6 +16,7 @@ Este repositório contém as resoluções dos exercícios, aulas e projetos em j
 | 10 | `Enumerações, Composição`                                |
 | 11 | `Enumerações, Composição - Spring Boot`                  |
 | 12 | `Herança e Polimorfismo`                                 |
+| 13 | `Tratamento de Exceções`                                 |
 
 ## Observações
 
