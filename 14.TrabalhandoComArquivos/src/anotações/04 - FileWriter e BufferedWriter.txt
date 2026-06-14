@@ -1,0 +1,12 @@
+FileWriter e BufferedWriter
+
+Classes
+
+* FileWriter (stream de escrita de caracteres em arquivos)
+    - Cria/recria o arquivo: new FileWriter(path): (se o arquivo não existir, vai ser criado, caso contrário
+    vai ser zerado).
+    - Acrescenta ao arquivo existente: new FileWriter(path, true)
+
+* BufferedWriter (mais rápido)
+    - Pois tem um esquema interno de tratar os dados com Buffer.
+
