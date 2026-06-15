@@ -1,0 +1,64 @@
+Herdar vs. cumprir contrato
+
+Aspectos em comum entre herança e interfaces
+
+* Relação é-um (Retângulo é um Shape, BrazilTaxService é um TaxService)
+* Generalização/especialização (Shape é um tipo genérico, Rectangle e Circle são tipos especializados,
+TaxService é um tipo genérico e BrazilTaxService e UsaTaxService são tipos especializados)
+* Polimorfismo (Se eu tenho uma variável do tipo shape, em tempo de execução ela pode ser associada a um
+Rectangle ou Circle, da mesma forma que uma variável TaxService pode ser associada a um BrazilTaxService
+ou UsaTaxService)
+    - Herança: o método area() vai ter comportamento polimórfico conforme a classe chamada
+    - Interface: o método tax() vai ter comportamento polimórfico conforme a classe chamada
+
+Exemplos:
+
+1. Herança                                               2. Interface
+
+abstract class Shape                                     interface TaxService
+- Color color;                                           + Double tax(Double amount);
++ Double area();
+
+class Rectangle extends Shape                            class BrazilTaxService implements TaxService
+- Double width;                                          + Double tax(Double amount){
+- Double height;                                            if (amount <= 100) return amount * 0.2;                                                             return amount * 0.15;
++ Double area(){                                            return amount * 0.15;
+    return width * height;                               }
+}
+
+class Circle extends Shape                               class UsaTaxService implements TaxService
+- Double radius;                                         + Double tax(Double amount) {
++ Double area(){                                            if (amount <= 100) return amount * 0.15;
+    return Math.PI * Math.pow(radius, 2);                   return amount * 0.10;
+}                                                        }
+
+Diferença fundamental
+
+* Herança ⇒ reuso (no caso reuso de informações e comportamentos)
+    - Exemplo: reaproveitamento dos métodos de Color em Shape
+* Interface ⇒ contrato a ser cumprido (as classes que implementarem TaxService vão TER QUE implementar
+os metodos da classe TaxService, no caso tax();
+
+E se eu precisar implementar Shape como interface, porém também quiser definir uma estrutura comum
+reutilizável para todas as figuras?
+
+interface Shape
++ Double area();
+
+abstract class AbstractShape implements Shape
+- Color color;
+
+class Rectangle extends AbstractShape
+- Double width;
+- Double height;
++ Double area(){
+    return width * height;
+}
+
+class Circle extends AbstractShape
+- Double radius;
++ Double area(){
+    return Math.PI * Math.pow(radius, 2);
+}
+
+Dessa forma a figura não necessariamente vai precisar ter cor.

@@ -18,7 +18,9 @@ Este repositório contém as resoluções dos exercícios, aulas e projetos em j
 | 12 | `Herança e Polimorfismo`                                 |
 | 13 | `Tratamento de Exceções`                                 |
 | 14 | `Trabalhando com Arquivos`                               |
+| 15 | `Interfaces`                                             |
 
 ## Observações
 
-A pasta 11. EnumeraçõesEComposicaoSpring foi utilizado o Java 25, enquanto as outras foi utilizado o Java 17
+ - A pasta 11. EnumeraçõesEComposicaoSpring foi utilizado o Java 25, enquanto as outras foi utilizado o Java 17
+ - Nas classes, ao instanciar os métodos getter e setter, tem alguns deles que não são utilizados, por isso coloco `@SuppressWarning("unused")` para na hora de publicar no github via IntelliJ, não apontar esses warnings.
